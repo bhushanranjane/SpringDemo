@@ -1,0 +1,16 @@
+package com.Sample.LoginDao;
+
+import java.util.List;
+
+import com.Sample.SimpleLogin.Login;
+
+public interface LoginDao
+{	
+	//Function to check the userName and password 
+	public boolean isValid(String UserName,String passWord);
+	//Function to display the list
+	public List<Login> showList();
+	//Function to delete User
+	public List<Login> delete(int Id);
+	
+}
